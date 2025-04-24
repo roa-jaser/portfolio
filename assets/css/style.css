@@ -364,7 +364,8 @@ header {
     display: flex;
     justify-content: center;
 }
-.portfolio-section h2{
+
+.portfolio-section h2 {
 
     font-size: 28px;
     color: #333;
@@ -407,9 +408,94 @@ header {
 }
 
 
+/* contact section */
 
 
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    max-width: 900px;
+    margin: 60px auto;
+    gap: 60px;
+}
 
+.form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 50%;
+}
+
+.form-section h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.form-section input,
+.form-section textarea {
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.form-section textarea {
+    height: 120px;
+    resize: none;
+}
+
+.form-section button {
+    padding: 12px;
+    background-color: #ffc0cb;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.form-section button:hover {
+    background-color: #ff9eb5;
+}
+
+.info-section {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.info-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.info-box i {
+    font-size: 22px;
+    color: pink;
+    margin-top: 5px;
+}
+
+.info-box h4 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.info-box p {
+    margin: 0;
+    font-size: 13px;
+    color: #555;
+}
 
 
 
