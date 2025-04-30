@@ -1028,100 +1028,101 @@ header {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
- 
+
 
 
 
 /* contact section */
 
-
 .contact-section {
+    max-width: 1000px;
+    margin: 50px auto;
+    background-color: #fff;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
-    background: #fff;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    justify-content: space-between;
+    gap: 40px;
+    padding: 40px;
     border-radius: 12px;
-    max-width: 900px;
-    margin: 60px auto;
-    gap: 60px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
 }
 
 .form-section {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    width: 50%;
+    flex: 1;
 }
 
 .form-section h2 {
-    font-size: 20px;
-    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
 }
 
-.form-section input,
-.form-section textarea {
+.form-section form input,
+.form-section form textarea {
     width: 100%;
-    padding: 10px 15px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
     font-size: 14px;
+    transition: border 0.3s;
 }
 
-.form-section textarea {
+.form-section form input:focus,
+.form-section form textarea:focus {
+    border-color: #f5a9b8;
+    outline: none;
+}
+
+.form-section form textarea {
+    resize: vertical;
     height: 120px;
-    resize: none;
 }
 
 .form-section button {
-    padding: 12px;
-    background-color: #ffc0cb;
+    background-color: #f5a9b8;
     color: white;
+    padding: 12px 20px;
     border: none;
-    border-radius: 25px;
+    border-radius: 8px;
     cursor: pointer;
     transition: background 0.3s;
 }
 
 .form-section button:hover {
-    background-color: #ff9eb5;
+    background-color: #f58ca3;
 }
 
 .info-section {
-    width: 40%;
+    flex: 0.8;
     display: flex;
     flex-direction: column;
     gap: 25px;
+    padding-top: 50px;
 }
 
 .info-box {
     display: flex;
     align-items: flex-start;
     gap: 15px;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 10px;
 }
 
 .info-box i {
     font-size: 22px;
-    color: pink;
-    margin-top: 5px;
+    color: #f5a9b8;
+    margin-top: 4px;
 }
 
 .info-box h4 {
     margin: 0;
-    font-size: 14px;
-    font-weight: bold;
+    font-size: 16px;
+    color: #333;
 }
 
 .info-box p {
-    margin: 0;
-    font-size: 13px;
-    color: #555;
+    margin: 2px 0 0;
+    font-size: 14px;
+    color: #666;
 }
-
-
 
 
 
