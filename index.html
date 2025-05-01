@@ -17,7 +17,7 @@
             <!-- navbar start -->
             <nav class="navbar">
                 <h2 class="logo">Portfolio</h2>
-                <ul class="nav-item">
+                <ul class="nav-item"  id="nav-links">
                     <li>
                         <a class="nav-link" href="#home">Home</a>
                     </li>
@@ -42,6 +42,10 @@
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
+                  <!-- زر الهمبرغر -->
+    <div class="hamburger" id="hamburger">
+        ☰
+      </div>
 
             </nav>
             <!-- navbar end -->
@@ -220,5 +224,19 @@
         </main>
         <!-- main end -->
     </body>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+      
+        hamburger.addEventListener('click', () => {
+          navLinks.classList.toggle('active');
+        });
+        function toggleMenu() {
+    const navItems = document.querySelector('.nav-items');
+    navItems.classList.toggle('active');
+}
+
+      </script>
+      
 
 </html>
