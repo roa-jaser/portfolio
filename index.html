@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- cdn for Font Awesome  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="" >
 
     <head>
 
@@ -17,7 +18,7 @@
             <!-- navbar start -->
             <nav class="navbar">
                 <h2 class="logo">Portfolio</h2>
-                <ul class="nav-item">
+                <ul class="nav-item"  id="nav-links">
                     <li>
                         <a class="nav-link" href="#home">Home</a>
                     </li>
@@ -42,6 +43,10 @@
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
+                  <!-- زر الهمبرغر -->
+    <div class="hamburger" id="hamburger">
+        ☰
+      </div>
 
             </nav>
             <!-- navbar end -->
@@ -57,7 +62,9 @@
                     <h3>FRONT-END DEVELOPER</h3>
                     <div class="buttons">
                         <button>HIRE ME</button>
-                        <button>DOWNLOAD CV</button>
+                        <a href="assets\Roa Jaser CV.docx" download>
+                            <button>DOWNLOAD CV</button>
+                        </a>
                     </div>
                     <div class="social-icons">
                         <a href="https://ar-ar.facebook.com/enespanol/" target="_blank"><img
@@ -71,12 +78,11 @@
                                 alt="" /></a>
                     </div>
                 </div>
-                <div class="gallery hero-img">
-                    <label class="image-wrapper">
-                        <input type="checkbox">
-                        <img src="assets/img/main.jpeg" alt="hero-img">
+                <div class="  hero-img">
 
-                    </label>
+                    <img src="assets/img/main.jpeg" alt="hero-img">
+
+
                 </div>
 
 
@@ -86,6 +92,7 @@
             </section>
             <section class="about-section" id="about">
                 <div class="container">
+                    
                     <div class="about-img">
                         <img src="assets/img/about-img.jpeg" alt="">
                     </div>
@@ -105,7 +112,7 @@
                             functional and visually appealing.
 
                         </p>
-                        <a href="#" class="btn">Download CV</a>
+                        <a href="assets/Roa Jaser CV.docx" class="btn">Download CV</a>
                     </div>
                 </div>
             </section>
@@ -143,11 +150,11 @@
                 <p>
                     Check My Wonderful Works
                 </p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In alias dignissimos.rerum commodi
+                <p>       Lorem ipsum dolor sit amet, consectetur adipisicing elit. In alias dignissimos.rerum commodi
                     corrupti, temporibus non quam.</p>
                 <div class="container2">
 
-                    <div class="box2" style="background-image: url('assets/img/book.png');">
+                    <div class="box2" style="background-image: url('assets/img/book.png'); ">
                     </div>
                     <div class="box2" style="background-image: url('assets/img/calender.png');">
                     </div>
@@ -166,8 +173,71 @@
                     </div>
                 </div>
             </section>
+
+
+            <section class="contact-section" id="contact">
+
+                <div class="form-section">
+                    
+                    <h2>Send me a message</h2>
+                    <form method="post">
+                        <input type="email" name="email" placeholder="Enter email" required>
+
+                        <input type="password" name="password" placeholder="Password (min 6 chars)" minlength="6"
+                            required>
+
+                        <textarea name="message" placeholder="Message" required></textarea>
+
+                        <input type="tel" name="phone" placeholder="Phone (e.g. +972586552796)" pattern="^\+972\d{9}$"
+                            required title="Phone must start with +972 and be 13 digits total">
+
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+
+
+                <div class="info-section">
+                    <div class="info-box">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Palestine, Jenin</p>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+972586552796</p>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>ruaajaser47@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
         <!-- main end -->
     </body>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+      
+        hamburger.addEventListener('click', () => {
+          navLinks.classList.toggle('active');
+        });
+        function toggleMenu() {
+    const navItems = document.querySelector('.nav-items');
+    navItems.classList.toggle('active');
+}
+
+      </script>
+      
 
 </html>
